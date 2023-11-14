@@ -1,8 +1,8 @@
 {
+  "name": "@house-note/database",
   "main": "./index.ts",
   "types": "./index.ts",
-  "name": "database",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "@prisma/client": "^5.1.1"
   },
@@ -10,6 +10,7 @@
     "prisma": "^5.1.1"
   },
   "scripts": {
+    "clean": "rm -rf .turbo node_modules",
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate"
   }

@@ -25,7 +25,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "2.2.0",
-    "zod": "^3.22.2"
+    "zod": "^3.22.2",
+    "@house-note/database": "workspace:^0.1.0"
   },
   "devDependencies": {
     "@house-note/eslint-config": "workspace:^0.2.0",
