@@ -6,7 +6,6 @@
  * tl;dr - this is where all the tRPC server stuff is created and plugged in.
  * The pieces you will need to use are documented accordingly near the end
  */
-import { db } from "@house-note/db";
 import { initTRPC } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
@@ -31,9 +30,7 @@ import { ZodError } from "zod";
  * @see https://create.t3.gg/en/usage/trpc#-servertrpccontextts
  */
 const createInnerTRPCContext = () => {
-  return {
-    db,
-  };
+  return {};
 };
 
 /**
