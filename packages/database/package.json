@@ -15,6 +15,5 @@
     "db:generate": "pnpm with-env prisma generate",
     "db:push": "pnpm with-env prisma db push --skip-generate",
     "with-env": "dotenv -e ../../.env --"
-
   }
 }
