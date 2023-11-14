@@ -1,4 +1,0 @@
-{
-  "extends": "@house-note/tsconfig/base.json",
-  "include": ["routes"]
-}
