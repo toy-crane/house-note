@@ -1,12 +1,11 @@
 // Importing env files here to validate on build
 import "./src/env.mjs";
-import "@house-note/auth/env.mjs";
 
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
   /** Enables hot reloading for local packages without a build step */
-  transpilePackages: ["@house-note/api", "@house-note/auth", "@house-note/db"],
+  transpilePackages: ["@house-note/api", "@house-note/db"],
   /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },

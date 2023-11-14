@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@house-note/api": "workspace:^0.1.0",
-    "@house-note/auth": "workspace:^0.1.0",
     "@house-note/db": "workspace:^0.1.0",
     "@t3-oss/env-nextjs": "^0.7.1",
     "@tanstack/react-query": "^5.8.1",

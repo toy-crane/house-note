@@ -1,7 +1,3 @@
-import { appRouter, createTRPCContext } from "@house-note/api";
-import { auth } from "@house-note/auth";
-import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
-
 export const runtime = "edge";
 
 /**
@@ -22,20 +18,3 @@ export function OPTIONS() {
   setCorsHeaders(response);
   return response;
 }
-
-const handler = auth(async (req) => {
-  const response = await fetchRequestHandler({
-    endpoint: "/api/trpc",
-    router: appRouter,
-    req,
-    createContext: () => createTRPCContext({ auth: req.auth, req }),
-    onError({ error, path }) {
-      console.error(`>>> tRPC Error on '${path}'`, error);
-    },
-  });
-
-  setCorsHeaders(response);
-  return response;
-});
-
-export { handler as GET, handler as POST };

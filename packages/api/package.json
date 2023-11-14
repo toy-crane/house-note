@@ -12,7 +12,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@house-note/auth": "workspace:^0.1.0",
     "@house-note/db": "workspace:^0.1.0",
     "@trpc/client": "next",
     "@trpc/server": "next",
