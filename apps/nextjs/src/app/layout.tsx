@@ -3,9 +3,9 @@ import { Inter } from "next/font/google";
 
 import "~/styles/globals.css";
 
-import { headers } from "next/headers";
+import { cookies } from "next/headers";
 
-import { TRPCReactProvider } from "./providers";
+import { TRPCReactProvider } from "~/trpc/react";
 
 const fontSans = Inter({
   subsets: ["latin"],
@@ -39,7 +39,7 @@ export default function Layout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={["font-sans", fontSans.variable].join(" ")}>
-        <TRPCReactProvider headers={headers()}>
+        <TRPCReactProvider cookies={cookies().toString()}>
           {props.children}
         </TRPCReactProvider>
       </body>
