@@ -2,6 +2,14 @@
   "$schema": "https://turborepo.org/schema.json",
   "globalDependencies": ["**/.env"],
   "pipeline": {
+    "pipeline": {
+      "db:generate": {
+        "cache": false
+      },
+      "db:push": {
+        "cache": false
+      }
+    },
     "topo": {
       "dependsOn": ["^topo"]
     },
