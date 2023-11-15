@@ -35,6 +35,8 @@ export const env = createEnv({
     VERCEL_URL: process.env.VERCEL_URL,
     PORT: process.env.PORT,
     DATABASE_URL: process.env.DATABASE_URL,
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   skipValidation:
