@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@house-note/database": "workspace:^0.1.0",
-    "@supabase/ssr": "^0.0.10",
-    "@supabase/supabase-js": "^2.38.4",
+    "@supabase/ssr": "0.0.10",
+    "@supabase/supabase-js": "2.38.4",
     "@t3-oss/env-nextjs": "^0.7.1",
     "@tanstack/react-query": "^4.32.6",
     "@tanstack/react-query-devtools": "^5.8.1",
