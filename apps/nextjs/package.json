@@ -10,8 +10,7 @@
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "start": "pnpm with-env next start",
     "typecheck": "tsc --noEmit",
-    "with-env": "dotenv -e ../../.env --",
-    "postinstall": "prisma generate"
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@house-note/database": "workspace:^0.1.0",
